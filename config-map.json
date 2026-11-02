@@ -1,0 +1,11 @@
+{
+  "$schema": "./schemas/config-map.schema.json",
+  "schema_version": 1,
+  "organization": "multica-seo-repo",
+  "repository": {
+    "id": "1442434679",
+    "name": "multica_workspace_backup",
+    "branch": "main"
+  },
+  "bindings": []
+}

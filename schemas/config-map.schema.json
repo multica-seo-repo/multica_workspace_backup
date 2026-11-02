@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Multica workspace configuration bindings",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "organization", "repository", "bindings"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "integer", "const": 1 },
+    "organization": { "type": "string", "minLength": 1 },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "branch"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[0-9]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "branch": { "type": "string", "minLength": 1 }
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["workspace_id", "kind", "agent_id", "path", "sync_enabled"],
+        "properties": {
+          "workspace_id": { "type": "string", "minLength": 1 },
+          "kind": { "enum": ["agent_prompt", "workspace_rules", "workspace_settings"] },
+          "agent_id": { "type": ["string", "null"], "minLength": 1 },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^workspaces/[^/]+/.+",
+            "not": { "pattern": "(^|/)\\.\\.?(/|$)|[\\\\:]|//" }
+          },
+          "sync_enabled": { "type": "boolean" }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "kind": { "const": "agent_prompt" } } },
+            "then": { "properties": { "agent_id": { "type": "string", "minLength": 1 } } },
+            "else": { "properties": { "agent_id": { "type": "null" } } }
+          }
+        ]
+      }
+    }
+  }
+}
