@@ -7,5 +7,13 @@
     "name": "multica_workspace_backup",
     "branch": "main"
   },
-  "bindings": []
+  "bindings": [
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "workspace_rules",
+      "agent_id": null,
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/general-rules.md",
+      "sync_enabled": true
+    }
+  ]
 }
