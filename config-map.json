@@ -19,7 +19,7 @@
       "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
       "kind": "agent_prompt",
       "agent_id": "1da6a3ac-0ffa-481d-b167-5c423e6cb19c",
-      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/1da6a3ac-0ffa-481d-b167-5c423e6cb19c/GitHub-Version-Manager_system-prompt.md",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/1da6a3ac-0ffa-481d-b167-5c423e6cb19c--GitHub-Version-Manager/GitHub-Version-Manager_system-prompt.md",
       "sync_enabled": true
     },
     {
@@ -33,7 +33,147 @@
       "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
       "kind": "agent_prompt",
       "agent_id": "e0470e08-1d8e-49ad-b973-c693bc04d9f6",
-      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/e0470e08-1d8e-49ad-b973-c693bc04d9f6/Google-Drive-Upload-Agent_system-prompt.md",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/e0470e08-1d8e-49ad-b973-c693bc04d9f6--Google-Drive-Upload-Agent/Google-Drive-Upload-Agent_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "523fd4ad-2aef-4145-9638-044374784423",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/523fd4ad-2aef-4145-9638-044374784423--Content-Validator/Content-Validator_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "6e94d59a-f59a-4f7c-9f25-e340c79cee98",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/6e94d59a-f59a-4f7c-9f25-e340c79cee98--Content-Agent-V3-Codex/Content-Agent-V3-Codex_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "f0874e91-feac-41a1-97ec-b473b7f8f8da",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/f0874e91-feac-41a1-97ec-b473b7f8f8da--Onsite-Checklist-v3/Onsite-Checklist-v3_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "621791e2-74a1-4b5b-b3d4-530ffb89b300",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/621791e2-74a1-4b5b-b3d4-530ffb89b300--Agent-and-Skill-Governor/Agent-and-Skill-Governor_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "ce30b92e-ea7c-4c08-94b2-4e96f2c0ec28",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/ce30b92e-ea7c-4c08-94b2-4e96f2c0ec28--Content-Agent-V3-PI/Content-Agent-V3-PI_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "8709cbc2-23cc-45b0-b483-750d0e7cbdaa",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/8709cbc2-23cc-45b0-b483-750d0e7cbdaa--Onsite-Checklist-v3-YAO/Onsite-Checklist-v3-YAO_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "cca49932-f269-44ee-854b-46f23f1dd4b1",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/cca49932-f269-44ee-854b-46f23f1dd4b1--Content-Outline-Agent-V2-SME/Content-Outline-Agent-V2-SME_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "1a01cc97-d745-485f-b57f-4b6850d8f5bc",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/1a01cc97-d745-485f-b57f-4b6850d8f5bc--Listicle-Backlink-Content-Creater/Listicle-Backlink-Content-Creater_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "ed6eacc8-a55c-4086-8d96-fc8fccd37949",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/ed6eacc8-a55c-4086-8d96-fc8fccd37949--Project-Manager-Dispatcher/Project-Manager-Dispatcher_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "b2438ef0-c1b1-43a1-ab43-a4b68412f220",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/b2438ef0-c1b1-43a1-ab43-a4b68412f220--Keyword-Research-Agent/Keyword-Research-Agent_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "87a27926-e29d-4a79-a1a8-802f15ab35c8",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/87a27926-e29d-4a79-a1a8-802f15ab35c8--pbn-backlink-publishing/pbn-backlink-publishing_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "57d2681b-32d1-4c33-9d39-f951dbd44513",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/57d2681b-32d1-4c33-9d39-f951dbd44513--Content-Outline-Agent-SME-DeepSeek/Content-Outline-Agent-SME-DeepSeek_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "391879de-0c5d-44af-9c15-d8718c00c133",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/391879de-0c5d-44af-9c15-d8718c00c133--Keyword-and-Blog-Topic-Research-Agent/Keyword-and-Blog-Topic-Research-Agent_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "e0d2671f-767e-42c1-858b-855e6dfd4db2",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/e0d2671f-767e-42c1-858b-855e6dfd4db2--Compliance-Agent/Compliance-Agent_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "6e6b1795-60de-4f39-875f-e1a8653200ea",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/6e6b1795-60de-4f39-875f-e1a8653200ea--Content-Outline-Agent-SME-Brian/Content-Outline-Agent-SME-Brian_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "a686d328-84ce-42e8-a26d-ffd3a5962362",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/a686d328-84ce-42e8-a26d-ffd3a5962362--Input-Sheet-Preparation-Agent-DeepSeek/Input-Sheet-Preparation-Agent-DeepSeek_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "1267833e-bf3e-45d5-8c77-d25afe23f2bd",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/1267833e-bf3e-45d5-8c77-d25afe23f2bd--Backlink-Order-Team/Backlink-Order-Team_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "11584b60-c158-4925-84b7-10d60a843175",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/11584b60-c158-4925-84b7-10d60a843175--Content-Outline-Agent-SME-Yao/Content-Outline-Agent-SME-Yao_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "3b95133c-d4b8-4536-9c41-6fc62b7f509d",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/3b95133c-d4b8-4536-9c41-6fc62b7f509d--Content-Outline-Agent-SME-Jenny/Content-Outline-Agent-SME-Jenny_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "788e4467-83cb-4b3f-a67d-932bfff140f4",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/788e4467-83cb-4b3f-a67d-932bfff140f4--onsite-audit-agent-2026-10-26/onsite-audit-agent-2026-10-26_system-prompt.md",
       "sync_enabled": true
     }
   ]
