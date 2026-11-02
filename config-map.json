@@ -26,7 +26,7 @@
       "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
       "kind": "agent_prompt",
       "agent_id": "8127f5a8-bc77-4491-9e3c-5403800ba347",
-      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/8127f5a8-bc77-4491-9e3c-5403800ba347/Agent-and-Skill-Governor-Codex_system-prompt.md",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/8127f5a8-bc77-4491-9e3c-5403800ba347--Agent-and-Skill-Governor-Codex/Agent-and-Skill-Governor-Codex_system-prompt.md",
       "sync_enabled": true
     },
     {
