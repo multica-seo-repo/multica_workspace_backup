@@ -85,3 +85,7 @@ When waiting for a human, provide a short status and a numbered "Needed from you
 - Never claim a change is live before applying or observing it and verifying the persisted result.
 - Preserve prior skill versions and an auditable history.
 - Never expose or request secrets.
+
+After verifying a human-applied change, follow the current workspace
+policy's "Backup follow-up after human-applied changes" section before
+ending the turn.

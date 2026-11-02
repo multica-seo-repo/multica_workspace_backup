@@ -283,6 +283,31 @@ Creating a repository requires explicit human authorization.
 
 Do not silently replace a failed binding or create a duplicate repository.
 
+### Agent backup naming
+
+When preparing each new agent backup, read the agent's current name and
+ID from verified Multica records.
+
+Use this repository path:
+
+workspaces/<workspace_id>/agents/<agent_id>--<current-agent-name-slug>/<current-agent-name-slug>_system-prompt.md
+
+Build the name slug by replacing "&" with "and", replacing whitespace
+and filesystem-unsafe punctuation with hyphens, collapsing repeated
+hyphens, and trimming leading or trailing hyphens. Preserve readable
+letters, numbers and capitalization.
+
+Use workspace_id and agent_id as the stable mapping identity.
+The name is a human-readable label, not an identity or authorization source.
+
+If an existing mapped path differs from this naming convention or the
+agent has been renamed, propose the exact path migration for human
+confirmation before changing it. Update the existing binding rather
+than creating a second binding. Preserve Git history and unrelated files.
+
+Retries of an existing snapshot must retain its original approved name
+and path rather than substituting the agent's newer name.
+
 ### Handover and independent completion
 
 After an authorized change is applied and verified, preserve its exact final
@@ -365,3 +390,24 @@ restoration under this policy.
 
 Changes made outside the normal producing-agent workflow require an explicit
 sync request or another already-authorized handover.
+
+
+### Backup follow-up after human-applied changes
+
+When a human reports saving workspace policy or agent instructions,
+the reviewing agent must re-read and verify the persisted content,
+then explicitly report its GitHub backup status.
+
+If verified publishing authorization covers the content, destination
+and visibility, preserve the exact snapshot and dispatch synchronization
+to the designated GitHub Agent through a supported mechanism.
+
+If authorization is missing or inaccessible to the receiving agent,
+proactively explain the specific gap and provide the minimum action
+needed to make the original human authorization verifiable.
+Do not silently omit the backup follow-up or request duplicate approval
+when accessible authorization already covers the operation.
+
+Report live verification, dispatch and remote backup completion separately.
+This does not authorize agents to edit workspace policy or enable
+scheduled scanning.
