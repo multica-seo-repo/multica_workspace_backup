@@ -1,0 +1,29 @@
+{
+  "sync_request_id": "SEO-273-historical-sources-2026-11-02-v1",
+  "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+  "source": "user-supplied historical text attachments; exact bytes preserved, historical live state not independently verified",
+  "original_requester": "tim.n",
+  "authorization_reference": "SEO-270 member comment 01a19aee-146d-712e-9e62-021ba0e7d211",
+  "repository_id": "1442434679",
+  "branch": "main",
+  "files": [
+    {
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/history/SEO-273/governor_v7_as_supplied.txt",
+      "original_attachment_id": "01a19af9-48bc-7531-87a0-156f166e3409",
+      "issue_attachment_id": "01a19afb-3c57-7da0-be9c-330b1bb7ade4",
+      "sha256": "67ecc06351d5a73071c46f183e355794dd01bf99520587dce43b41a9dfd61414",
+      "size": 7289,
+      "version_note": "Governor v7 is the requester description; file itself has no version or agent ID"
+    },
+    {
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/history/SEO-273/workspace_general_policy_v8_as_supplied.txt",
+      "original_attachment_id": "01a19af9-79e0-77a0-b242-b2b9b789dd1a",
+      "issue_attachment_id": "01a19afb-3e16-79a2-bfca-ad7adc4690f8",
+      "sha256": "032f89f087dec9dd97719b6ca606c6eea5c9f65737fb7054d87fb14fc8619e37",
+      "size": 9312,
+      "version_note": "File self-identifies workspace-general-v8"
+    }
+  ],
+  "current_mapping_changed": false,
+  "live_multica_config_changed": false
+}
