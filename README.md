@@ -1,6 +1,6 @@
 # Multica Workspace Backup
 
-Private, versioned backups of Multica workspace General Rules, agent system prompts, and explicitly selected workspace settings for [multica-seo-repo](https://github.com/multica-seo-repo).
+Public, versioned backups of Multica workspace General Rules, agent system prompts, and explicitly selected workspace settings for [multica-seo-repo](https://github.com/multica-seo-repo). Published content is publicly readable; include only material approved for public sharing.
 
 The [Multica skills catalog](https://github.com/multica-seo-repo/multica-skills-management) links independent skill repositories. Workspace configuration is backed up here.
 
