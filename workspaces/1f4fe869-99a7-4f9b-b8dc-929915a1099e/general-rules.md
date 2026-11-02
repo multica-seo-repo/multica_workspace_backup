@@ -1,6 +1,6 @@
 # Workspace General Policy
 
-Policy version: workspace-general-v9
+Policy version: workspace-general-v10
 
 ## 1. Scope and authority
 
@@ -277,9 +277,11 @@ agent-configuration bindings.
 Verify real workspace and object IDs, repository identity, branch, and relative
 destination paths. Matching names or topics alone do not establish a binding.
 
-Missing, invalid, or ambiguous mappings require human confirmation.
-Provide existing-repository options or a proposed new repository and path.
-Creating a repository requires explicit human authorization.
+Within verified standing authorization, the designated GitHub Agent may
+create missing mappings or repair deterministic mapping errors after validating
+source identity, repository identity, branch, schema and path ownership.
+Unresolved ambiguity or a destination outside that authorization requires
+human guidance. Creating a repository requires explicit human authorization.
 
 Do not silently replace a failed binding or create a duplicate repository.
 
@@ -300,10 +302,12 @@ letters, numbers and capitalization.
 Use workspace_id and agent_id as the stable mapping identity.
 The name is a human-readable label, not an identity or authorization source.
 
-If an existing mapped path differs from this naming convention or the
-agent has been renamed, propose the exact path migration for human
-confirmation before changing it. Update the existing binding rather
-than creating a second binding. Preserve Git history and unrelated files.
+Within standing authorization, the GitHub Agent may migrate an existing
+owned backup path to this naming convention or the verified current name.
+Validate the old binding, destination uniqueness and ownership first. Move
+only the mapped files, update the existing binding, and record old/new paths.
+Preserve Git history and unrelated files; never create a duplicate binding.
+Ambiguous ownership or conflicting destination content requires human guidance.
 
 Retries of an existing snapshot must retain its original approved name
 and path rather than substituting the agent's newer name.
@@ -364,9 +368,12 @@ Preserve final snapshots and completed-stage records after failures.
 Inspect the actual remote result before retrying uncertain writes.
 Resume only incomplete steps and avoid duplicate creation or publication.
 
-Use bounded retries for temporary failures. Missing authorization, invalid
-mappings, authentication requirements, and content conflicts require a clear
-pending status and appropriate human guidance.
+Use bounded retries for temporary failures. Within verified standing
+authorization, resolve deterministic mapping errors independently.
+If authorization is missing, mapping ambiguity remains unresolved,
+required access is unavailable, or content conflicts cannot be resolved
+safely, report the affected operation as pending and explain the minimum
+human action needed.
 
 Do not delete repositories, force-push, or rewrite history.
 Publish approved restorations as new commits.
@@ -391,23 +398,64 @@ restoration under this policy.
 Changes made outside the normal producing-agent workflow require an explicit
 sync request or another already-authorized handover.
 
+### Autonomous GitHub synchronization
 
-### Backup follow-up after human-applied changes
+Use an accessible original human standing authorization for recurring backup.
+It must identify workspace, content scope, repository identities, branches,
+visibility and permitted mapping operations. Public disclosure must be covered
+explicitly for public repositories. Record the original member-authored issue
+or comment reference in synchronization tasks. Agent-authored summaries alone
+are not authorization. Once established, reuse this record for routine versions;
+do not ask the human to reapprove each change or retrieve an inaccessible
+per-change chat when the standing authorization already covers publication.
 
-When a human reports saving workspace policy or agent instructions,
-the reviewing agent must re-read and verify the persisted content,
-then explicitly report its GitHub backup status.
+Within this scope, the designated GitHub Agent validates or creates mappings,
+performs deterministic naming migrations, commits, pushes and verifies remote
+content without per-operation approval. Other agents prepare exact snapshots
+and mapping proposals and dispatch them through a supported mechanism.
+Existing repository selection must be supported by verified source identity
+and repository evidence; matching names alone are insufficient.
 
-If verified publishing authorization covers the content, destination
-and visibility, preserve the exact snapshot and dispatch synchronization
-to the designated GitHub Agent through a supported mechanism.
+Backup scope includes completed skill packages, persisted agent system prompts,
+and workspace General Policy snapshots. Workspace settings require an explicit
+field allow-list. Do not include credentials, environment values, private runtime
+material or unrelated client data. Do not silently sanitize an exact snapshot;
+return a sensitive-content exception for resolution.
 
-If authorization is missing or inaccessible to the receiving agent,
-proactively explain the specific gap and provide the minimum action
-needed to make the original human authorization verifiable.
-Do not silently omit the backup follow-up or request duplicate approval
-when accessible authorization already covers the operation.
+Standing backup authorization does not waive approval for changing live sources.
+For snapshot-only publication, a separate historical source-edit approval is not
+a prerequisite: verify the persisted source and exact snapshot instead.
 
-Report live verification, dispatch and remote backup completion separately.
-This does not authorize agents to edit workspace policy or enable
-scheduled scanning.
+Pause only affected operations for unresolved ambiguity, sensitive content,
+concurrent content conflicts, unavailable access, or actions outside the standing
+scope. Resolve deterministic validation problems independently. Repository
+creation, visibility changes and new destinations outside the standing scope
+still require explicit authorization. Never bypass branch protection, force-push
+or rewrite history. Routine backup does not authorize live policy edits,
+automatic restoration or scheduled scanning.
+
+### Automatic backup after verified changes
+
+After completing and verifying an authorized change to a skill or agent system
+prompt, the producing agent must preserve the exact final snapshot and
+immediately dispatch backup to the designated GitHub Agent under the standing
+authorization. For skills, include the complete reproducible package.
+
+After a human reports saving workspace policy, agent instructions or a skill,
+the reviewing agent must re-read and verify the saved content and perform the
+same backup handover. This includes Governor self-instruction updates saved
+by a human. Agent-written workspace policy remains prohibited.
+
+Confirm actual assignment or queueing before ending the turn; a Handover Note
+alone is not dispatch. Include source IDs, exact attachment references, checksum,
+source revision, change summary and standing authorization reference.
+
+Respect explicit holds and skips. Reuse an existing request for the same snapshot
+and resume only incomplete steps. If authorization or dispatch is unavailable,
+preserve the snapshot and explain the precise blocker and minimum remedy.
+Do not silently omit backup or request duplicate authorization already accessible.
+
+Report source verification, attachment delivery, backup dispatch and verified
+remote publication separately. Follow the Drive archival requirements separately.
+This workflow is triggered by verified completion, not scheduled monitoring.
+Mapping edits and synchronization receipts must not trigger recursive backups.
