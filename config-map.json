@@ -14,6 +14,27 @@
       "agent_id": null,
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/general-rules.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "1da6a3ac-0ffa-481d-b167-5c423e6cb19c",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/1da6a3ac-0ffa-481d-b167-5c423e6cb19c/GitHub-Version-Manager_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "8127f5a8-bc77-4491-9e3c-5403800ba347",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/8127f5a8-bc77-4491-9e3c-5403800ba347/Agent-and-Skill-Governor-Codex_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "e0470e08-1d8e-49ad-b973-c693bc04d9f6",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/e0470e08-1d8e-49ad-b973-c693bc04d9f6/Google-Drive-Upload-Agent_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
