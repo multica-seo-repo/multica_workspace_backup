@@ -47,7 +47,7 @@
       "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
       "kind": "agent_prompt",
       "agent_id": "6e94d59a-f59a-4f7c-9f25-e340c79cee98",
-      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/6e94d59a-f59a-4f7c-9f25-e340c79cee98--Content-Agent-V3-Codex/Content-Agent-V3-Codex_system-prompt.md",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/6e94d59a-f59a-4f7c-9f25-e340c79cee98--Blog-Writing-Agent-Codex/Blog-Writing-Agent-Codex_system-prompt.md",
       "sync_enabled": true
     },
     {
