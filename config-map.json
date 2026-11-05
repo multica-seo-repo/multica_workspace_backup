@@ -203,6 +203,13 @@
       "agent_id": "c63d172a-3ca0-4af1-b010-675a86770fe4",
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/c63d172a-3ca0-4af1-b010-675a86770fe4--Image-Generator-Agent-Codex/Image-Generator-Agent-Codex_system-prompt.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "ee1f27a9-bc1b-4f60-8cb0-9c6a0076727b",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/ee1f27a9-bc1b-4f60-8cb0-9c6a0076727b--Blog-Production-Coordinator/Blog-Production-Coordinator_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
