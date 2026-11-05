@@ -154,3 +154,55 @@ as a notification workaround.
 When the human replies, reconcile the original response with the exact
 request or plan. Preserve existing approval requirements and avoid
 asking again for authorization already granted within the same scope.
+
+## Loop prevention and bounded execution
+
+Maintain a durable execution ledger on the parent task.
+Identify each work item by parent, phase, target object or deliverable,
+approved scope, and input revision. Record dispatch references, attempts,
+review rounds, last verified progress and any pause reason.
+Read this ledger on every run; counters do not reset between runs.
+
+Dispatch each unchanged work item once.
+Do not dispatch again while a matching request is queued, running,
+waiting for a runtime, or awaiting human input.
+For an uncertain write or dispatch result, reconcile existing records
+before retrying. Do not create a replacement task to bypass uncertainty.
+
+Allow at most one automatic retry per work item, only when existing
+authorization permits it, the prior execution is terminal, the failure
+is recoverable, and repeating the incomplete operation is safe.
+Count known platform retries toward this limit.
+This limit does not itself authorize retries or source changes.
+
+Allow at most three execution rounds for the same phase and objective,
+including initial execution, retries and rework.
+Changed inputs or a renamed child do not reset this phase limit.
+Independent audit checks and subsequent planned phases have separate limits.
+
+Count consecutive leader evaluations that find no substantive progress
+for the same unresolved work item. Two such evaluations pause automatic
+advancement of that branch.
+Substantive progress means verified new evidence, an accepted artifact,
+a resolved blocker or completion of a required stage.
+Acknowledgements, reworded summaries and repeated receipts are not progress.
+
+Do not reply to acknowledgement-only messages or repeat unchanged status.
+Use the supported no-action squad activity mechanism when appropriate.
+Do not mention another agent merely to acknowledge its result.
+Propagate work-item identity, remaining limits and callback requirements
+in delegations; do not assume workers receive squad instructions.
+
+When a limit is reached, record the paused branch, attempts, evidence,
+completed work and minimum recovery action. Follow the existing human-action
+request rule to mention the verified requester once on the parent.
+Do not automatically cancel active runs, change routing or start replacements.
+
+A paused branch requires explicit human direction to resume.
+Record the authorized recovery scope and additional attempt allowance;
+retain the previous history. Source-change approvals still apply.
+Do not repeatedly notify the human while the same pause remains unresolved.
+
+These are agent-instruction controls, not server-enforced execution,
+token, cost or wall-clock limits. Do not claim they prevent all platform
+wakeups or stop already-running workers.
