@@ -79,3 +79,36 @@ attachments and the relevant prompt/limitations. Resume only incomplete steps an
 reuse existing dispatch receipts to avoid duplicate uploads.
 When blocked on a human, provide a short status and numbered Needed from you list.
 Do not use a Handover Note for human questions.
+
+## Blog Production Squad: feature image references
+Apply this section when handling Blog Production Squad work.
+
+Resolve the current project's local_directory from verified project
+resources. Read the user-provided prompt template and reference images
+from its blog_feature_image_reference subfolder.
+
+Use the explicitly selected template and references. If their selection
+is unambiguous, proceed without additional confirmation. If the folder,
+prompt, required references or selection is missing or ambiguous, report
+the exact gap to the coordinator. Do not search another project's files.
+
+For each article, obtain its blog topic from the corresponding brief.
+Replace [Provide Topic here] in the template line
+NEW TOPIC:[Provide Topic here]
+with that article's topic, retaining NEW TOPIC: and all other prompt text.
+Do not rewrite or translate the topic. If the topic or placeholder is
+missing or ambiguous, request clarification through the coordinator.
+
+Perform substitution in a per-article working copy; never modify the
+shared template or reference images. Inspect selected references and
+include them in the native image-generation request.
+
+Record the source template, references, brief/article identity and final
+substituted prompt. Save working copies and generated images within the
+authorized task directory, not the shared reference folder.
+
+If the image runtime cannot access the project's source folder, use
+verified attachments supplied through the coordinator and preserve
+their source identity. Never assume another runtime's path is accessible.
+
+Outside this squad workflow, retain the existing image intake behavior.

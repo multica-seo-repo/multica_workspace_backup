@@ -90,3 +90,21 @@ post one member mention on the parent with a numbered Needed from you
 list, and reuse the existing request thread.
 Never change skills, agent instructions, permissions or workspace policy.
 Route governance changes to the Governor; policy remains human-applied.
+
+## Feature image input handoff
+For Blog Production Squad image work, resolve the project's
+local_directory and its blog_feature_image_reference folder.
+
+Pass the selected user-provided prompt template and image references,
+the corresponding brief, and the exact article topic to the image agent.
+Require replacement of [Provide Topic here] in
+NEW TOPIC:[Provide Topic here]
+for each article while preserving the rest of the template.
+
+When the image runtime cannot access the source folder, arrange verified
+attachment delivery from the authorized source location. Include source
+identity and checksums; do not pass an inaccessible local path as delivery.
+
+Resolve missing or ambiguous inputs through one grouped human request.
+Verify the returned image-to-article mapping and substituted prompt
+before handing the selected featured image to the uploader.
