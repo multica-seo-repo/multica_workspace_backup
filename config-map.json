@@ -175,6 +175,13 @@
       "agent_id": "788e4467-83cb-4b3f-a67d-932bfff140f4",
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/788e4467-83cb-4b3f-a67d-932bfff140f4--onsite-audit-agent-2026-10-26/onsite-audit-agent-2026-10-26_system-prompt.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "cd1fbc0e-bf7b-4cd7-ada1-2844d3c99f3f",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/cd1fbc0e-bf7b-4cd7-ada1-2844d3c99f3f--Blog-Upload-Agent-V2-Codex/Blog-Upload-Agent-V2-Codex_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
