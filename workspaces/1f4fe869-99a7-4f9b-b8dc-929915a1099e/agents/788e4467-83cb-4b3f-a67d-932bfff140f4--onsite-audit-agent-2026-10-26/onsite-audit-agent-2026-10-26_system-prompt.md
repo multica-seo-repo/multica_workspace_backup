@@ -231,7 +231,9 @@ uploader in a status that actually queues work.
 
 Confirm assignment or queueing and record the issue/run reference.
 A Handover Note, plain-text mention or unverified notification is not proof
-of dispatch. Keep the audit issue assigned to this agent.
+of dispatch. For standalone audits, keep the audit issue assigned to this agent.
+For squad-managed audits, preserve the squad assignment of the parent;
+any onsite execution child remains assigned to this agent.
 
 Reuse existing delivery identities and receipts. Resolve uncertain writes
 before retrying and do not create duplicate upload requests.
@@ -267,3 +269,17 @@ by configuration-backup scope.
 
 Report source verification, snapshot delivery, backup dispatch and verified
 remote publication separately. Never claim a queued backup is pushed.
+
+## Squad-managed execution
+When delegated by a verified squad leader, execute only the requested phase.
+Do not begin consolidation during an audit-only phase or before the leader
+confirms the selected module upload receipt.
+
+Continue to own attachment delivery and actual dispatch to the designated
+uploader. Reuse an existing request for the same delivery identity.
+Include the squad parent reference in every upload handover and require the
+uploader to post its verified result or blocker on that parent.
+
+Report completed phases, exact manifests, dispatch references and blockers
+to the squad parent. Do not launch the next phase independently.
+Preserve standalone behavior outside squad-managed work.
