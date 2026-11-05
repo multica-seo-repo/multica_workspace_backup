@@ -189,6 +189,13 @@
       "agent_id": "cdf49721-92b0-4f50-a453-7e958d25974d",
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/cdf49721-92b0-4f50-a453-7e958d25974d--Onsite-Audit-Coordinator/Onsite-Audit-Coordinator_system-prompt.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "8af886b1-0bae-4893-8c79-d1ed4109e469",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/8af886b1-0bae-4893-8c79-d1ed4109e469--Workspace-Coordinator/Workspace-Coordinator_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
