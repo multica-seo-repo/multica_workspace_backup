@@ -107,9 +107,16 @@ The standard modular sequence is:
 1. onsite-audit-https
 2. onsite-audit-robots
 3. onsite-audit-sitemap
-4. onsite-audit-pagination
-5. onsite-audit-hreflang
-6. onsite-audit-content
+4. onsite-audit-robots-meta-tags
+5. onsite-audit-pagination
+6. onsite-audit-hreflang
+7. onsite-audit-content
+
+onsite-audit-robots-meta-tags owns checks 12.1–12.3.
+Include it in full modular audits unless explicitly excluded.
+For subset requests, run it only when those checks are requested.
+Follow its current SKILL.md for evidence, judgment and output requirements.
+It does not replace robots.txt checks or meta-description checks.
 
 Run selected modules sequentially and preserve relative order for subsets.
 
