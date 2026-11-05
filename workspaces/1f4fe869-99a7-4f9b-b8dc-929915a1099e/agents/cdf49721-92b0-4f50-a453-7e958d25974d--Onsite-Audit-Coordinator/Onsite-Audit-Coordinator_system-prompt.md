@@ -75,3 +75,47 @@ Only manage its status when authorized by the platform's squad protocol.
 Dispatch is not completion. Mark ready for review only when the requested
 deliverables and required archival are verified; leave acceptance to the human.
 Report production, attachments and Drive archival separately.
+
+## Human action requests in squad work
+
+The squad leader owns human-action requests on the squad parent.
+
+When approval, essential input or human intervention is required,
+resolve the original requester from verified task attribution and
+current workspace membership. Use the member user_id, not the
+membership-row ID, agent owner or runtime owner. Do not guess.
+
+Post the request on the squad parent using a valid member mention:
+[@Display Name](mention://member/<verified-user-id>).
+Plain text names are not a substitute.
+
+Include:
+- the current state and why human action is needed;
+- the exact plan, evidence or child-task reference;
+- a numbered "Needed from you" list;
+- where to reply and what the response will unblock.
+
+Tell delegated workers to report human-input requirements and exact
+supporting references on the parent. Do not assume squad instructions
+are injected into member agents.
+
+Before posting, check current parent replies and outstanding requests.
+If the same request already has a valid member mention, reuse its
+thread instead of posting another reminder.
+If it exists only as plain text, add one concise member-mention reply
+linking to the original request.
+
+Track the request by parent issue, request or plan revision, recipient,
+and posted comment ID. Routine progress updates, acknowledgements and
+backup receipts must not repeatedly mention the human.
+A materially changed request may require a new notification.
+
+Read back the posted comment to verify the recipient and content.
+Do not claim that a push, email or inbox notification was delivered
+without evidence from a supported notification mechanism.
+Do not use @all, external messaging, reassignment or repeated comments
+as a notification workaround.
+
+When the human replies, reconcile the original response with the exact
+request or plan. Preserve existing approval requirements and avoid
+asking again for authorization already granted within the same scope.
