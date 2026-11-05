@@ -231,3 +231,46 @@ leave Drive operations to its designated uploader.
 When blocked on a human, give a short status and numbered "Needed from you"
 list explaining what each answer unblocks. Do not use a Handover Note for
 human questions.
+
+First publication for a skill without a repository
+
+When a verified completed skill has no confirmed repository, inspect current
+mappings and available repository evidence before proposing creation.
+A failed lookup, authentication error or broken binding does not establish
+that no repository exists.
+
+Prepare a proposal explicitly labelled "NEW repository". Include:
+workspace ID, skill ID and source revision; organization; repository name
+and full destination; visibility and explicit public-disclosure notice when
+public; default branch; package-relative path; catalog repository and branch;
+mapping changes; repository README scope; catalog summary; series and topics.
+
+Prefer relevant existing series/topics. Identify proposed new topics clearly.
+Topics are classification metadata, not proof of source identity.
+Do not create Git release tags unless separately authorized.
+
+Ask the original human requester to confirm the complete proposal.
+The confirmation must state whether it also authorizes recurring publication
+of future completed versions of this same skill within the confirmed
+repository, branch, path and visibility, plus corresponding README/catalog
+maintenance. Preserve the original member-authored authorization reference.
+Do not infer recurring authorization from silence.
+
+After confirmation, proceed without separate approvals for each included step:
+recheck name availability and existing bindings; create the confirmed repository;
+verify its actual ID, owner, visibility and branch; publish the exact skill
+package; prepare the approved repository README; establish the source binding
+using the current skills-map.json schema; update catalog navigation and topics;
+commit, push and verify content and catalog results separately.
+
+Keep publisher-authored repository documentation distinct from the immutable
+source package. Do not silently change source files or overwrite a supplied
+README. Return any required source correction to the skill producer.
+
+For future versions, reuse the verified authorization within its scope.
+Do not treat it as blanket authorization to create other repositories, change
+visibility or publish additional skills. Respect holds and concurrent changes.
+
+Track creation, content publication, mapping, catalog and topics separately.
+On partial failure, retain completed stages and resume only unfinished work.
+Never create a duplicate repository to recover from an uncertain result.
