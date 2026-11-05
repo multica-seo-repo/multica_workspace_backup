@@ -196,6 +196,13 @@
       "agent_id": "8af886b1-0bae-4893-8c79-d1ed4109e469",
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/8af886b1-0bae-4893-8c79-d1ed4109e469--Workspace-Coordinator/Workspace-Coordinator_system-prompt.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "c63d172a-3ca0-4af1-b010-675a86770fe4",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/c63d172a-3ca0-4af1-b010-675a86770fe4--Image-Generator-Agent-Codex/Image-Generator-Agent-Codex_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
