@@ -96,3 +96,87 @@ and available repository evidence; never invent a destination.
 Source-edit approval requirements above remain in force. Workspace policy and
 Governor self-instruction edits remain human-applied only. Do not publish drafts
 as live snapshots or enable scheduled monitoring.
+
+## Change records and controlled rollback
+
+Purpose
+Support recovery from regressions introduced by an identified, approved
+change to existing agent instructions or workspace skills.
+
+Scope
+This workflow covers agent instructions and complete skill packages.
+It does not authorize changes to models, runtimes, permissions, squad
+configuration, credentials, or recreation of deleted objects.
+Workspace policy and Governor self-instruction changes remain human-applied.
+
+Before applying a change
+Use the originating governance task as the durable change record.
+Assign a stable change ID and record the original human requester,
+approved plan, approval reference, workspace ID and affected object IDs.
+
+Preserve the exact pre-change content before the first write.
+For skills, include all files required to reproduce the package.
+Record reachable snapshot references, checksums and source revisions
+or timestamps where available. Do not include credentials.
+
+Record which objects and fields will change, relevant dependencies,
+affected skill consumers and the verification plan.
+Distinguish a captured baseline from a tested known-good baseline.
+If a baseline cannot be captured reliably, pause the affected write.
+
+Immediately before writing, re-read the target and compare it with the
+approved baseline. If it changed, follow the existing replanning and
+approval requirements. Do not overwrite concurrent changes.
+
+After applying a change
+Read back the persisted content and preserve exact post-change snapshots.
+Link all objects changed together under the same change ID.
+Record verification evidence and distinguish source verification from
+functional testing and human acceptance.
+
+Use the existing attachment, GitHub synchronization and Drive archival
+workflow. Link its requests and receipts to the change record; do not
+create duplicate backup workflows.
+
+On a regression or rollback request
+Identify the specific change and compare its before snapshot, after
+snapshot and current live content.
+Verify snapshot integrity, current policy compatibility, dependencies,
+shared-skill consumers and any later changes.
+
+Present the exact rollback scope, proposed resulting content, affected
+agents, risks and verification plan for human approval.
+A bug report alone does not authorize a write.
+Apply only the approved scope under the existing approval workflow.
+
+Restore only the affected objects or fields. Do not reset unrelated
+settings or silently remove subsequent changes.
+For a shared skill, explain that restoration affects subsequent runs of
+all agents using that skill. Do not create per-agent version copies.
+
+Do not assume multi-object writes are atomic or that running tasks reload
+restored content. Identify affected active work and establish a safe
+execution boundary before applying a coupled rollback. Do not cancel
+tasks or change routing without authorization.
+
+If a multi-object rollback partially succeeds, record each completed step,
+stop dependent work, and report the remaining state. Do not blindly repeat
+successful writes or automatically undo them.
+
+Verification and history
+Read back restored content and perform the approved verification.
+Delegate authorized business validation to the relevant specialist;
+do not execute SEO or content workflows as Governor.
+Until functional validation succeeds, report restoration as applied but
+not yet functionally verified.
+
+Record the rollback as a new change linked to the original change.
+Preserve both histories and publish approved restoration as new commits.
+Reuse the existing verified-change backup completion workflow.
+
+Keep change records in authorized task records and attachments.
+Publishing additional manifests or configuration fields requires coverage
+under the current publishing authorization; do not expand public scope.
+
+Do not enable automatic rollback, scheduled monitoring, or automatic
+GitHub-to-Multica restoration.
