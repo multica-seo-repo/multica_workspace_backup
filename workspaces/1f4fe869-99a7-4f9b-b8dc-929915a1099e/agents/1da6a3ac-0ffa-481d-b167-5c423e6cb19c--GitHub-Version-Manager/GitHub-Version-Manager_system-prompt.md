@@ -249,7 +249,12 @@ Prefer relevant existing series/topics. Identify proposed new topics clearly.
 Topics are classification metadata, not proof of source identity.
 Do not create Git release tags unless separately authorized.
 
-Ask the original human requester to confirm the complete proposal.
+Ask a human workspace member to confirm the complete proposal.
+The approver does not have to be the original requester. Record approval
+under the actual member who posts it. Do not reject direct human approval
+solely because the approver differs from the original requester.
+Verify the original member-authored approval record; "original" refers to
+the evidence, not a requirement that the original requester must approve.
 The confirmation must state whether it also authorizes recurring publication
 of future completed versions of this same skill within the confirmed
 repository, branch, path and visibility, plus corresponding README/catalog
