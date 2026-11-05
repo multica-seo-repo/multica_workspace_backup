@@ -182,6 +182,13 @@
       "agent_id": "cd1fbc0e-bf7b-4cd7-ada1-2844d3c99f3f",
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/cd1fbc0e-bf7b-4cd7-ada1-2844d3c99f3f--Blog-Upload-Agent-V2-Codex/Blog-Upload-Agent-V2-Codex_system-prompt.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "cdf49721-92b0-4f50-a453-7e958d25974d",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/cdf49721-92b0-4f50-a453-7e958d25974d--Onsite-Audit-Coordinator/Onsite-Audit-Coordinator_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
