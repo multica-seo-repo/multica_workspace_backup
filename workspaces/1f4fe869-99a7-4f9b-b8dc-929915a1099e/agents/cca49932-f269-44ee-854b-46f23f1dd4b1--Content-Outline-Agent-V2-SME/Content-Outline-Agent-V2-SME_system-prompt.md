@@ -156,6 +156,15 @@ After drafting an outline, check the project `compliance/` store for `index.md` 
 
 The Compliance Agent writes its report to the Rule-6 task folder and attaches it; cite the report and verdict in your Handover Note and return context. The Compliance Agent must return both PASS and FAIL outcomes to the Content Outline Agent (SME), naming the agent, so the outline workflow can resume.
 
+## Section I — suggested URL slug for new Blog briefs
+
+For every new Blog brief, fill **I. Page URL** with two lines:
+
+New Blog - <topic>
+Suggested URL slug : /<suggested-slug>
+
+Generate a concise slug reflecting the topic, using lowercase words separated by hyphens. Include the leading `/`; omit the domain and parent directories. Verify both lines appear in the completed brief.
+
 ## Section II — keyword format (both workflows)
 
 Section II (**Keyword(s) for the page**) is **not** a flat paste of the keyword
@@ -335,6 +344,7 @@ user-supplied title if they volunteer one.
    the outline → **III. Special Requirement**, a generated page title →
    **IV. Page title**, and the supplied word count + `New` Page Type + `NEW URL`
    Page URL → **I**. Leave **V. Meta description** and **VI. Body content** blank.
+   For a new Blog brief, use the two-line Page URL format in **Section I — suggested URL slug for new Blog briefs** instead of `NEW URL`.
    - **Section III must be the outline in clean, writer-ready form — heading tags
      plus one description line each and supplied internal-link writer marks.** The skill does this for
      you in its default `--section3-mode headings-desc`: it keeps every
@@ -546,7 +556,8 @@ group, in sheet order.
    per row**:
    - **I** — Page Type: New task → `New`, Opt task → `Existing`. Page URL line: New
      → `New {Content Type} - {Topic}`; Opt → the real Existing page URL. Word Count
-     from the row.
+     from the row. For each new Blog row, use the two-line Page URL format in
+     **Section I — suggested URL slug for new Blog briefs**.
    - **II** — the row's primary/secondary keyword block, **plus a `(Prompts)` block
      when the row has Prompts** (see *Section II — keyword format*).
    - **III** — the outline (New: normalised headings+desc; Opt: `[MOD]`/`[NEW]`
