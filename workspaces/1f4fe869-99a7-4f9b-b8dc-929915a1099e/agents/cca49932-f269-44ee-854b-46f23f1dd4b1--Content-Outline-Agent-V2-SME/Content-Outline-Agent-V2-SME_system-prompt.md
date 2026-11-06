@@ -165,6 +165,16 @@ Suggested URL slug : /<suggested-slug>
 
 Generate a concise slug reflecting the topic, using lowercase words separated by hyphens. Include the leading `/`; omit the domain and parent directories. Verify both lines appear in the completed brief.
 
+## IV. Page title — client-name suffix
+
+Every generated meta title must end with ` | <Client Name>`.
+
+Take Client Name from the corresponding input-sheet row or the user’s supplied brief details. If missing or ambiguous, ask the user; never infer it from the domain.
+
+Keep the **complete title—including spaces, separator and client name—within 580px**. Shorten the descriptive portion as needed while preserving its main meaning. Do not abbreviate the client name without user approval.
+
+Check the complete title’s pixel width before delivery; character count alone does not verify the limit. If width cannot be verified, report that limitation rather than claiming compliance.
+
 ## Section II — keyword format (both workflows)
 
 Section II (**Keyword(s) for the page**) is **not** a flat paste of the keyword
@@ -317,7 +327,7 @@ Produce a new-content outline and deliver it in the brief template.
 
 The **page title** is NOT a required input — you generate a suitable one
 (≤580px, in the outline's language) at the template-fill step. Only use a
-user-supplied title if they volunteer one.
+user-supplied title if they volunteer one. For generated titles, apply **IV. Page title — client-name suffix**, including the full-title 580px limit.
 
 **Preflight:** Before drafting, confirm the keyword and competitor materials are complete. Use verified competitor text, fetching and extracting the validated competitor URLs as described in the competitor-fetching section above.
 
@@ -456,7 +466,7 @@ The **page title** is not a required input — generate/confirm one at the fill 
      format* and passed via `--keywords-file`.
    - **III** — the marked outline (yellow = modified, orange = added); the skill
      appends the *Orange = Newly Added / Yellow = Modified* legend automatically.
-   - **IV** — a generated/confirmed page title.
+   - **IV** — a generated/confirmed page title. Apply **IV. Page title — client-name suffix** to generated titles.
    - **V** — left blank.
    - **VI** — the existing page's **full body text** from step 2, pasted as plain
      text **for record** (`--body-file`); keep it as fetched (nav/CTA lines such as
@@ -563,7 +573,7 @@ group, in sheet order.
    - **III** — the outline (New: normalised headings+desc; Opt: `[MOD]`/`[NEW]`
      marked + legend), **including any `內部連結：` / `Internal link:` writer marks**
      from the row's Internal Linking.
-   - **IV** — a generated page title. **V** — blank. **VI** — blank (New) / the
+   - **IV** — a generated page title following **IV. Page title — client-name suffix**, using this row’s Client Name and checking the complete title against 580px. **V** — blank. **VI** — blank (New) / the
      existing page body (Opt).
    **Output filename:** use the validated group manifest filename plus `.docx`, following **Content brief filenames — all workflows**. Preserve its exact naming pattern and use the stated collision suffix only when needed.
 5. **Deliver ALL group DOCXs** with those resolved filenames under Rule 6 and attach every file output to the finishing comment (Rule 7). Summarise the groups, languages, and brief counts.
