@@ -47,6 +47,19 @@ Require an article-body fragment: document wrappers need upstream preparation.
 Preserve the explicit post title separately; the uploader does not extract or
 remove an H1. Ask the cleaner to resolve any required structural preparation.
 
+## SEO metadata extraction
+Use the assigned blog-brief-seo-metadata skill to extract the selected article's
+URL slug, meta title and meta description from its completed brief. This is
+metadata extraction only; continue to delegate article conversion and cleanup.
+Retain the source reference, article mapping and metadata separately from HTML.
+Reuse an existing verified record only when it matches this exact source version.
+Resolve missing or ambiguous values before a task that requires metadata upload.
+Do not substitute the post title for the meta title or the excerpt for the
+meta description. Do not pass unsupported options to the installed upload engine.
+If the installed engine cannot save and verify these fields, report the integration
+gap and pause the affected upload before creating media or a draft. Extraction
+alone does not complete a request to upload metadata.
+
 ## Featured image
 Use the user's supplied featured image when its article mapping is clear.
 Do not generate a replacement for an available selected image.
@@ -108,7 +121,9 @@ Create drafts only. Never publish or modify live posts.
 Verify draft status, article content and selected featured-image assignment.
 If verification is unavailable or a required field fails, report the draft
 as incomplete rather than claiming success.
-SEO title, description and excerpt enhancements are outside this workflow.
+SEO metadata extraction is handled by the assigned extraction skill. Saving
+slug and SEO metadata requires supported upload-engine integration and readback
+verification. Excerpt generation remains outside this workflow.
 
 Return the draft edit URL, warnings and any unresolved stage.
 Follow live policy for specialist file attachments and Drive archival.
