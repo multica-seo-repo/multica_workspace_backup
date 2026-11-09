@@ -267,28 +267,17 @@ Apply this requirement to every New, Optimization and bulk brief in EN or TC. Se
 - If a bundled skill implementation cannot satisfy this result, stop production under General Context Rule 2 and preserve reproducible inputs, the exact failing example, diagnostics and failed output with upload hold true. In that same issue comment, explicitly mention the Agent & Skill Governor using its live resolved agent ID, include a complete Rule-5 handover and request a governed repair. If a mention cannot be resolved or invoked, state that routing failed and ask the user to route it. A plain "authorized skill owner must fix" note is not a completed escalation. Do not edit skills/instructions yourself or hand-clean the DOCX.
 - After the Governor confirms the approved repair is live, resume from the preserved inputs, regenerate with the next unused filename, repeat all applicable QA, then deliver and invoke the designated uploader under the existing rules. Preserve prior content/outline/link approvals; no new approval is needed solely for formatting cleanup that leaves approved content unchanged. If a repair requires changing approved content, use the existing outline-approval checkpoint.
 
-## Internal linking — writer guide (both workflows, optional)
+## Internal linking — writer guide (all workflows, optional)
 
-When the user (or the spreadsheet's **Internal Linking (Optional)** column)
-supplies one or more **internal links**, carry them into the **Section III
-outline** as a guide for the future writer — do **not** drop them and do **not**
-render them as live body content:
+When the user or input sheet supplies internal links, carry them into the corresponding brief's Section III outline as writer guidance. For spreadsheet input, consume the canonical `Internal Linking` manifest field; the intake skill accepts `Internal Linking`, `Internal Link`, and `Internal Links`, including optional suffixes. Keep each row's links with that row's brief.
 
-- **Place each internal link at the most relevant section** of the outline — the
-  heading whose topic the linked page best supports. Use your judgement from the
-  link's URL/anchor and the surrounding headings; if the fit is genuinely
-  ambiguous, place it under the closest on-topic H2 rather than guessing wildly.
-- **Leave a writer mark** on its own line **directly under that heading**, using
-  the marker the fill skill preserves:
-  `內部連結：<url>`（TC）/ `Internal link: <url>` (EN). You may add a short note
-  after the URL (e.g. `Internal link: https://… — link the anchor "explainer
-  video" here`). The mark is a guide **for the writer**, telling them which
-  internal link to weave in and where — the writer inserts the actual link.
-- **Only these `內部連結：` / `Internal link:` marker lines survive Section III
-  normalisation** — write the guide exactly in that form so it is not stripped.
-- **When the Internal Linking input is blank, add nothing** — no marker, no
-  placeholder.
-- Never invent internal links; use only the URLs supplied, verbatim.
+- Follow the user's explicit placement instructions, including row-level Special Instructions or supplied link-placement notes, before applying the default below.
+- Otherwise, prioritise the closing CTA / Conclusion-CTA section. Where relevant, guide the writer to invite readers to view the linked products or services after reading the article.
+- If CTA placement would be clearly awkward, off-topic, misleading, or overcrowded, place the affected link under the most relevant existing section instead. Briefly record the reason in the outline review notes. Do not force a product/service invitation when the destination does not support it. If no section fits clearly, flag the affected link for clarification rather than silently omitting it.
+- Preserve every supplied URL verbatim and retain supplied anchor or placement notes. Never invent links. Do not repeat the same URL across sections unless the user requests it or a clear editorial need is recorded.
+- Put each writer mark on its own line directly beneath the chosen heading, using `內部連結：<url>` for TC or `Internal link: <url>` for EN. A short anchor or placement note may follow the URL. These are writer guides, not drafted body content; preserve the exact marker prefixes so Section III normalisation keeps them.
+- If internal-link input is absent or blank, add no link, marker or placeholder, and do not ask for links as a required input.
+- Before delivery, reconcile each row's supplied links against its detailed outline and final DOCX Section III. Confirm that every supplied URL survives under the intended heading, with no links leaking into another brief. Keep the CLEAN outline headers-only. Report unresolved omissions or placement conflicts before claiming completion.
 
 ---
 
