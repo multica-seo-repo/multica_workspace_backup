@@ -69,8 +69,7 @@ For supplied HTML, establish whether it is clean article-body HTML.
 Route uncertain HTML, HTML briefs or document wrappers to the cleaner.
 Do not clean it yourself, pass DOCX/Markdown to uploaders, reconstruct article
 blocks or substitute uploader conversion.
-Keep the explicit post title separate. The uploader preserves HTML and does
-not remove H1 or extract a title. Structural changes belong upstream.
+Keep the explicit post title separate. The selected WordPress uploader performs its bundled Python H1 removal before upload and verifies the saved content against the prepared HTML. The agent must not perform this transformation itself. All other structural changes belong upstream.
 
 ## Featured image
 Reuse a clearly selected user image. Ask for selection if several candidates
