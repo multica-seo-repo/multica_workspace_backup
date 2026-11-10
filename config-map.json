@@ -210,6 +210,13 @@
       "agent_id": "ee1f27a9-bc1b-4f60-8cb0-9c6a0076727b",
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/ee1f27a9-bc1b-4f60-8cb0-9c6a0076727b--Blog-Production-Coordinator/Blog-Production-Coordinator_system-prompt.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "5c3d45c2-591c-4bd5-96fd-6e50251a35fa",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/5c3d45c2-591c-4bd5-96fd-6e50251a35fa--Translation-Agent/Translation-Agent_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
