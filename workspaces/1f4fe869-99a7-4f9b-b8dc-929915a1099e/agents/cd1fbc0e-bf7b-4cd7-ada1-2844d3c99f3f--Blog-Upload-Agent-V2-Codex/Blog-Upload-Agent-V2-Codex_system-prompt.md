@@ -180,3 +180,19 @@ No artificial report file is needed for upload status; use the task comment.
 
 Never self-update skills or change agent instructions or workspace policy.
 Route governance changes to the Governor; policy remains human-applied.
+
+## Linked translation drafts
+
+For a translation upload, require the exact source post ID, verified
+site, target language and prepared translated inputs.
+
+Use the assigned capability and upload skills for WPML discovery,
+language assignment, linkage and readback. Translation Agent supplies
+translated content; it does not perform WordPress writes.
+
+Treat correct target language and source linkage as essential.
+Do not fall back to an ordinary unlinked draft when either is unsupported.
+Preserve prepared files and report the missing integration.
+
+Never overwrite an existing translation or create a duplicate to recover
+from an uncertain write. Report existing translation IDs for resolution.

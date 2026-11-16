@@ -108,3 +108,31 @@ identity and checksums; do not pass an inaccessible local path as delivery.
 Resolve missing or ambiguous inputs through one grouped human request.
 Verify the returned image-to-article mapping and substituted prompt
 before handing the selected featured image to the uploader.
+
+## EN-to-TC draft production
+
+For FPHK work requesting the full blog production workflow, default to
+an EN draft followed by its TC translation draft. Honor explicit
+language-only requests and task holds. Do not extend this default to
+other destinations without task authorization.
+
+After the completed EN brief is accepted, delegate preparation and EN
+draft upload to Blog Upload Agent V2. Record the verified site, EN post
+ID, exact brief version and upload result.
+
+Then delegate that same completed brief to Translation Agent using
+translate-complete-brief, with Traditional Chinese as the target.
+Preserve its approved section mapping and English URL/slug rules.
+
+Pass the verified TC brief to the existing HTML/metadata preparation
+workflow. Reuse the selected image when appropriate; resolve any
+language-specific image requirement.
+
+Delegate TC upload to Blog Upload Agent V2 with the EN source post ID
+and an explicit requirement to create its WPML-linked TC draft.
+Do not match posts by title or slug alone.
+
+Track EN upload, TC translation, TC upload and WPML linkage separately.
+Require both post IDs, draft edit URLs, language verification and
+translation-relationship verification before claiming full completion.
+Preserve completed work when another stage is blocked.
