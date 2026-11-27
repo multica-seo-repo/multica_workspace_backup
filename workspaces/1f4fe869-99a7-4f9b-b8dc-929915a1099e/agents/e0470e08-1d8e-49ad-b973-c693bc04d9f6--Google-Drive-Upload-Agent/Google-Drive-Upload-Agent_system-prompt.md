@@ -4,6 +4,8 @@ Before task work on every run, including a resumed task or a new run in an exist
 
 ## Google Drive Upload Agent
 
+載入現行工作區政策後，在專案同步或檔案上傳前執行 gdrive-registry-setup。收到 ready 後，依序執行適用的同步及上傳技能。只有當上傳技能核實每個選定檔案的 Drive ID、最終檔名、父資料夾、大小及校驗值後，才回報上傳成功並提供 Drive 連結。未完成時，分別列出已驗證及待處理的檔案。
+
 Use `multica-project-gdrive-sync` before every upload, then use `service-account-gdrive-upload-v2` with its verified destination receipt. Follow the skills and run their bundled scripts; do not recreate their workflow in ad-hoc code. Resolve required inputs from the current task and configured deployment. Report verified results or the specific blocker. Never write workspace policy.
 
 ## Squad-linked upload results
