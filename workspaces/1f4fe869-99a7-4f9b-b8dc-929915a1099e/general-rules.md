@@ -1,6 +1,6 @@
 # Workspace General Policy
 
-Policy version: workspace-general-v10
+Policy version: workspace-general-v11
 
 ## 1. Scope and authority
 
@@ -45,6 +45,14 @@ to apply it.
 Agents must not apply policy changes through CLI commands, APIs, browser
 automation, scripts, or delegation to another agent. After a human reports
 saving an update, an agent may re-read the policy to verify the saved text.
+
+### Issue-tree scope for task data
+
+Start with the current issue and its handover. Use verified Multica parent-child links to establish the root issue. A task may use relevant records and selected deliverables from anywhere in that same tree, including ancestors, descendants and sibling branches, subject to existing permissions and holds. Read only what the assigned action requires.
+
+Treat each separate root issue as independent, whether open or closed. A shared project, agent, filename, mention or dependency link does not establish tree membership. Do not search, open, reuse or resume unrelated issues, attachments or runtime directories to find inputs or instructions. If the relationship cannot be verified or an input is missing, request the input on the current issue. A recipient may use a file explicitly delivered into its authorized task without browsing the source task.
+
+Use the current workspace policy, assigned skills and live agent instructions from their designated sources. The issue-tree restriction concerns task data. Agents may perform narrowly scoped lookups required by this policy, such as verifying a specific original approval, project mapping, deployment record, upload receipt or repository binding. A lookup grants no access to the referenced task's other files. For new delegated work, create a child issue when the receiving agent needs access to the same task tree.
 
 ## 3. Keep task files in the assigned location
 
@@ -220,6 +228,14 @@ Report production, attachment delivery, and Drive archival status separately
 when any part remains pending or has failed. Never claim complete delivery
 without verification.
 
+### Persistent registry and retries
+
+The designated uploader uses the same verified persistent registry for project synchronization and upload. Resolve its location from the approved deployment record. The registry holds operational metadata; stage deliverable bytes in the authorized task directory. Initialize empty state only for an explicitly approved new-deliveries-only deployment. Preserve established mappings, reservations and receipts. Missing established state requires recovery.
+
+For a new-deliveries-only deployment, apply the registry from its approved starting point. An absent entry is insufficient evidence that an earlier delivery was never uploaded. Before retrying an earlier or uncertain delivery, reconcile its identity against authorized receipts and the Drive destination. Pause that delivery if the evidence is inconclusive.
+
+Where cleanup is authorized, remove only the uploader's own recorded temporary copy after the remote file, upload receipt and matching downloadable attachment have been verified. Honor explicit cleanup holds.
+
 ## 7. GitHub version management
 
 ### Scope and repository roles
@@ -268,6 +284,10 @@ pushes, remote verification, and publishing retries.
 Resolve its identity from current verified workspace configuration.
 Do not guess an agent ID or create a replacement agent automatically.
 
+A standing authorization must be an accessible, original human record covering the workspace, content scope, repository identities, branches, visibility and permitted mapping operations. Public disclosure requires explicit coverage. Reference the member-authored issue or comment in the sync task. Workspace settings require an explicit field allow-list. Exclude credentials, environment values, private runtime material and unrelated client data. If an exact snapshot contains sensitive content, report the exception rather than silently changing the snapshot.
+
+For snapshot-only publication within standing authorization, verify the persisted source and exact snapshot. A separate historical source-edit approval is unnecessary for publication. Changes to live sources remain subject to their own approval requirements. Honor branch protection. Repository creation, visibility changes and destinations outside standing scope require separate explicit authorization.
+
 ### Mapping
 
 Use skills-map.json for skill-to-repository bindings.
@@ -313,10 +333,6 @@ Retries of an existing snapshot must retain its original approved name
 and path rather than substituting the agent's newer name.
 
 ### Handover and independent completion
-
-After an authorized change is applied and verified, preserve its exact final
-snapshot and hand over authorized synchronization using the workspace's
-handover requirements.
 
 Include the content type, workspace and affected object IDs, change summary,
 original authorization reference, exact snapshot references, and available
@@ -395,44 +411,7 @@ recursively trigger another GitHub synchronization.
 Do not enable scheduled auto-check or automatic GitHub-to-Multica
 restoration under this policy.
 
-Changes made outside the normal producing-agent workflow require an explicit
-sync request or another already-authorized handover.
-
-### Autonomous GitHub synchronization
-
-Use an accessible original human standing authorization for recurring backup.
-It must identify workspace, content scope, repository identities, branches,
-visibility and permitted mapping operations. Public disclosure must be covered
-explicitly for public repositories. Record the original member-authored issue
-or comment reference in synchronization tasks. Agent-authored summaries alone
-are not authorization. Once established, reuse this record for routine versions;
-do not ask the human to reapprove each change or retrieve an inaccessible
-per-change chat when the standing authorization already covers publication.
-
-Within this scope, the designated GitHub Agent validates or creates mappings,
-performs deterministic naming migrations, commits, pushes and verifies remote
-content without per-operation approval. Other agents prepare exact snapshots
-and mapping proposals and dispatch them through a supported mechanism.
-Existing repository selection must be supported by verified source identity
-and repository evidence; matching names alone are insufficient.
-
-Backup scope includes completed skill packages, persisted agent system prompts,
-and workspace General Policy snapshots. Workspace settings require an explicit
-field allow-list. Do not include credentials, environment values, private runtime
-material or unrelated client data. Do not silently sanitize an exact snapshot;
-return a sensitive-content exception for resolution.
-
-Standing backup authorization does not waive approval for changing live sources.
-For snapshot-only publication, a separate historical source-edit approval is not
-a prerequisite: verify the persisted source and exact snapshot instead.
-
-Pause only affected operations for unresolved ambiguity, sensitive content,
-concurrent content conflicts, unavailable access, or actions outside the standing
-scope. Resolve deterministic validation problems independently. Repository
-creation, visibility changes and new destinations outside the standing scope
-still require explicit authorization. Never bypass branch protection, force-push
-or rewrite history. Routine backup does not authorize live policy edits,
-automatic restoration or scheduled scanning.
+For changes outside the normal producing-agent workflow, the verified human-save procedure below triggers backup. Other changes require an explicit sync request or an already-authorized handover.
 
 ### Automatic backup after verified changes
 
@@ -446,9 +425,7 @@ the reviewing agent must re-read and verify the saved content and perform the
 same backup handover. This includes Governor self-instruction updates saved
 by a human. Agent-written workspace policy remains prohibited.
 
-Confirm actual assignment or queueing before ending the turn; a Handover Note
-alone is not dispatch. Include source IDs, exact attachment references, checksum,
-source revision, change summary and standing authorization reference.
+Include the checksum and source revision in the handover described above.
 
 Respect explicit holds and skips. Reuse an existing request for the same snapshot
 and resume only incomplete steps. If authorization or dispatch is unavailable,
