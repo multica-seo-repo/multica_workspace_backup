@@ -217,6 +217,34 @@
       "agent_id": "5c3d45c2-591c-4bd5-96fd-6e50251a35fa",
       "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/5c3d45c2-591c-4bd5-96fd-6e50251a35fa--Translation-Agent/Translation-Agent_system-prompt.md",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "5fcec89f-99e7-4209-a95d-f1e1905fb190",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/5fcec89f-99e7-4209-a95d-f1e1905fb190--Content-Network-Site-Operator/Content-Network-Site-Operator_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "690da4fc-e818-49ea-826c-4d0bd40a1d06",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/690da4fc-e818-49ea-826c-4d0bd40a1d06--Content-Network-Writer/Content-Network-Writer_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "1bbaaac1-e442-46ad-928d-c13430bb5300",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/1bbaaac1-e442-46ad-928d-c13430bb5300--Content-Network-Image-Editor/Content-Network-Image-Editor_system-prompt.md",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "kind": "agent_prompt",
+      "agent_id": "ba34ed65-4284-4883-b86f-5f7f9c803fe1",
+      "path": "workspaces/1f4fe869-99a7-4f9b-b8dc-929915a1099e/agents/ba34ed65-4284-4883-b86f-5f7f9c803fe1--Content-Network-Site-Designer/Content-Network-Site-Designer_system-prompt.md",
+      "sync_enabled": true
     }
   ]
 }
